@@ -3,6 +3,7 @@ import React from "react";
 import BarPlot from "./barPlot";
 import PiePlot from "./piePlot";
 import ScatterPlot from "./ScatterPlot";
+import BoxPlot from "./boxPlot";
 
 const ContenedorPlots = styled.div`
   display: flex;
@@ -21,7 +22,7 @@ const DivContainerCards = styled.div`
   display: grid;
   margin-right: 5%;
   margin-bottom: 2%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 3%;
 `;
 
@@ -33,6 +34,7 @@ const PlotsContenedor = () => {
           <BarPlot />
           <PiePlot />
           <ScatterPlot />
+          <BoxPlot />
         </DivContainerCards>
       </DivContainer>
     </ContenedorPlots>

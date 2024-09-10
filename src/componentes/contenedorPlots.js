@@ -4,6 +4,9 @@ import BarPlot from "./barPlot";
 import PiePlot from "./piePlot";
 import ScatterPlot from "./ScatterPlot";
 import BoxPlot from "./boxPlot";
+import LineDash from "./lineDash";
+import Bubble from "./bubble";
+
 
 const ContenedorPlots = styled.div`
   display: flex;
@@ -35,6 +38,9 @@ const PlotsContenedor = () => {
           <PiePlot />
           <ScatterPlot />
           <BoxPlot />
+          <LineDash/>
+          <Bubble/>
+         
         </DivContainerCards>
       </DivContainer>
     </ContenedorPlots>

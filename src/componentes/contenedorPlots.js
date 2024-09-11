@@ -6,6 +6,7 @@ import ScatterPlot from "./ScatterPlot";
 import BoxPlot from "./boxPlot";
 import LineDash from "./lineDash";
 import Bubble from "./bubble";
+import SoilPlot from "./ternaryPlot";
 
 
 const ContenedorPlots = styled.div`
@@ -40,7 +41,7 @@ const PlotsContenedor = () => {
           <BoxPlot />
           <LineDash/>
           <Bubble/>
-         
+         <SoilPlot/>
         </DivContainerCards>
       </DivContainer>
     </ContenedorPlots>

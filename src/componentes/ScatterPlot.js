@@ -1,9 +1,13 @@
 import Plot from "react-plotly.js";
 import React from "react";
+import styled from "styled-components";
+import { StyledBox } from './boxPlot';
+
+const StyleScattered= styled(StyledBox)``;
 
 const ScatterPlot = () => {
   return (
-    <>
+    <StyleScattered>
       <Plot
         data={[
           {
@@ -22,9 +26,9 @@ const ScatterPlot = () => {
             },
           },
         ]}
-        layout={{ title: "Scatter Plot with a Color Dimension" }}
+        layout={{justifyContent: 'center', height: 300, width: 600, title: "Scatter Plot with a Color Dimension" }}
       />
-    </>
+    </StyleScattered>
   );
 };
 

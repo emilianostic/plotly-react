@@ -6,14 +6,13 @@ import ScatterPlot from "./ScatterPlot";
 import BoxPlot from "./boxPlot";
 import LineDash from "./lineDash";
 import Bubble from "./bubble";
-//import SoilPlot from "./ternaryPlot";
 import Texture from "./Texture";
 
 
 const ContenedorPlots = styled.div`
   display: flex;
-  height: 45%;
-  width: 50%;
+  height: 100%;
+  width: 80%;
   margin-top: 2%;
 `;
 
@@ -21,14 +20,14 @@ const DivContainer = styled.div`
   width: 90%;
   max-width: 90%;
   margin: auto;
-  display: grid;
+  
 `;
 const DivContainerCards = styled.div`
   display: grid;
   margin-right: 5%;
   margin-bottom: 2%;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3%;
+  gap: 1%;
 `;
 
 const PlotsContenedor = () => {
@@ -39,10 +38,9 @@ const PlotsContenedor = () => {
           <BarPlot />
           <PiePlot />
           <ScatterPlot />
-          <BoxPlot />
+          <BoxPlot/>
           <LineDash/>
           <Bubble/>
-         {/* <SoilPlot/> */}
          <Texture/>
         </DivContainerCards>
       </DivContainer>

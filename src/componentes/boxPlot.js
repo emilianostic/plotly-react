@@ -1,9 +1,18 @@
 import Plot from "react-plotly.js";
 import React from "react";
+import styled from "styled-components";
+
+
+export const StyledBox = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+
+`;
 
 const BoxPlot = () => {
   return (
-    <>
+    <StyledBox>
       <Plot
         data={[
           {
@@ -53,9 +62,12 @@ const BoxPlot = () => {
           },
 
           boxmode: "group",
+          justifyContent: 'center',
+          height: 300,
+          width: 600,
         }}
       />
-    </>
+    </StyledBox>
   );
 };
 

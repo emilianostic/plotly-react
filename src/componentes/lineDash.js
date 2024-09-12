@@ -1,9 +1,14 @@
 import Plot from "react-plotly.js";
 import React from "react";
 
+import styled from "styled-components";
+import { StyledBox } from "./boxPlot";
+
+const StyledLineDash = styled(StyledBox)``;
+
 const LineDash = () => {
   return (
-    <>
+    <StyledLineDash>
       <Plot
         data={[
           {
@@ -60,6 +65,10 @@ const LineDash = () => {
           },
         ]}
         layout={{
+          alignItems: "center",
+          justifyContent: "center",
+          height: 400,
+          width: 600,
           title: "Line Dash",
 
           xaxis: {
@@ -85,7 +94,7 @@ const LineDash = () => {
           },
         }}
       />
-    </>
+    </StyledLineDash>
   );
 };
 

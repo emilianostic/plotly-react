@@ -1,10 +1,13 @@
 import Plot from "react-plotly.js";
 import React from "react";
+import styled from "styled-components";
+import { StyledBox } from './boxPlot';
 
+const StyledBubble = styled(StyledBox)``;
 
 const Bubble = () => {
   return (
-    <>
+    <StyledBubble>
       <Plot
         data={[
           {
@@ -71,9 +74,9 @@ const Bubble = () => {
             type: "scatter",
           },
         ]}
-        layout={{ showlegend: false }}
+        layout={{ justifyContent: 'center', height: 300, width: 600, showlegend: false,  }}
       />
-    </>
+    </StyledBubble>
   );
 };
 

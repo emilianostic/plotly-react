@@ -67,7 +67,7 @@ const LineDash = () => {
         layout={{
           alignItems: "center",
           justifyContent: "center",
-          height: 400,
+          height: 300,
           width: 600,
           title: "Line Dash",
 

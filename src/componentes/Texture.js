@@ -38,15 +38,18 @@ const Texture = () => {
             aaxis: makeAxis("Clay"),
             baxis: makeAxis("Sand"),
             caxis: makeAxis("Silt"),
+            domain: { x: [0.0, 0.0], y: [0.0, 0.0]},
+           
           },
           showlegend: false,
-          width: 700,
+          height: 300,
+          width: 600,
           annotations: [
             {
               showarrow: false,
               text: `Replica of Daven Quinn's <a href="http://bl.ocks.org/davenquinn/988167471993bc2ece29">block</a>`,
-              x: 0.15,
-              y: 1.1,
+              x: 0.01,
+              y: 1.5,
             },
           ],
         });
@@ -74,7 +77,7 @@ const Texture = () => {
   return (
     <div>
       {plotData.length > 0 && (
-        <Plot data={plotData} layout={layout} style={{ width: "100%", height: "100%" }} />
+        <Plot data={plotData} layout={layout}  />
       )}
     </div>
   );

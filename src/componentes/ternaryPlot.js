@@ -23,7 +23,7 @@ const SoilPlot = () => {
 
   return (
     <div>
-      <h1>Datos de tipos de suelo</h1>
+      
       {Object.keys(soil).map((soilType) => (
         <div key={soilType}>
           <h2>{soilType}</h2>

@@ -8,6 +8,7 @@ import LineDash from "./lineDash";
 import Bubble from "./bubble";
 import Texture from "./Texture";
 import FancyPlot from "./fancyPlot";
+import BarLechuga from "./lechuga"
 
 
 const ContenedorPlots = styled.div`
@@ -44,6 +45,7 @@ const PlotsContenedor = () => {
           <Bubble/>
          <Texture/>
          <FancyPlot/>
+         <BarLechuga/>
         </DivContainerCards>
       </DivContainer>
     </ContenedorPlots>

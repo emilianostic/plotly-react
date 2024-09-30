@@ -46,6 +46,7 @@ const PlotsContenedor = () => {
          <Texture/>
          <FancyPlot/>
          <BarLechuga/>
+         <FancyPlot/>
         </DivContainerCards>
       </DivContainer>
     </ContenedorPlots>
